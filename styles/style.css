@@ -3,3 +3,48 @@
     padding: 0;
 }
 
+.header_logo {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    width: 100vw;
+    background-image: url('/resources/Обложка\ всего\ сайта/Обложка фон.png');
+}
+
+.header_section {
+    border: red solid 1px;
+}
+
+header {
+    border: green solid 1px;
+    background-image: url('/resources/Блок 1 - Главная/картинка для главной страницы.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    display: flex;
+    border: yellow solid 1px;
+    justify-content: space-between;
+}
+
+.nav_options {
+    display: flex;
+    border: black solid 1px;
+    justify-content: space-between;
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    left: 57%;
+}
+
+.nav_options li {
+    list-style-type: none;
+}
+
+.language_selector {
+    
+}
