@@ -4,200 +4,294 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <!-- header section -->
     <section class="header_section">
-      <!-- navigation bar with language and logo -->
       <header>
+        <!-- logo -->
+        <a href="index.html">
+          <img
+            class="header_logo"
+            src="resources/Блок 1 - Главная/лого.png"
+            alt="Company logo"
+          />
+        </a>
+        <!-- navigation -->
         <nav class="navigation">
-          <!-- company logo -->
-          <a href="index.html">
-            <img
-              class="header_logo"
-              src="resources/Блок 1 - Главная/лого.png"
-              alt="Company logo"
-            />
-          </a>
-
           <ul class="nav_options">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#properties">Properties</a></li>
-            <li><a href="#feedback">Feedback</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <select id="language_selector">
-                <option value="en">EN</option>
-                <option valaue="lv">LV</option>
-                <option value="ru">RU</option>
-              </select>
-            </li>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#properties">Объекты</a></li>
+            <li><a href="#feedback">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
-
-          <!-- language selector -->
-
-          <!-- <select id="language_selector">
-                    <option value="en">EN</option>
-                    <option valaue="lv">LV</option>
-                    <option value="ru">RU</option>
-                </select> -->
         </nav>
 
-        <h1>YOUR TRUSTED PARTNER IN REAL ESTATE</h1>
-        <p>
-          A personalized approach for <strong>every client</strong>.<br />
-          We facilitate <strong>prompt acquisition</strong> or sale<br />
-          of <strong>any residential property</strong>.
-        </p>
-        <button>Apply</button>
+        <select>
+          <option value="en">EN</option>
+          <option valaue="lv">LV</option>
+          <option value="ru">RU</option>
+        </select>
       </header>
+
+      <div class="header_text">
+        <h1>ВАШ НАДЕЖНЫЙ ПАРТНЕР В ВЫБОРЕ<strong> НЕДВИЖИМОСТИ</strong></h1>
+        <p>
+          Персональный подход к <strong>каждому клиенту.</strong><br />
+          Помогаем в <strong>кратчайшие сроки</strong> продать и подобрать<br />
+          <strong>любой объект</strong> жилой недвижимости.
+        </p>
+        <button>Отправить заявку</button>
+      </div>
     </section>
 
     <!-- company description section -->
-    <section>
-      <img />
-      <h2>ABOUT THE COMPANY</h2>
-      <p>VITA ESTATE</p>
-      <p>
-        A fast-emerging property agency offering comprehensive residential
-        property services, from assisting
-        <strong>with your property sale</strong> to
-        <strong>finding the perfect house or apartment</strong> for you.<br />
-
-        With great importance attached to
-        <strong>individual approach to our customers</strong>, we conduct an
-        exhaustive study of your needs and requirements to offer solutions that
-        would best match your expectations.<br />
-
-        We strive to make the process of buying, selling, or renting property as
-        straightforward and comfortable as possible for our clients.
-        <strong>Your confidence and comfort are our priorities</strong>.<br />
-
-        Joanne Doe Real Property Transaction Manager
-      </p>
-    </section>
-
-    <!-- company services section -->
-    <section>
-      <h2></h2>
-      <div>
-        <article class="consultation">
-          <h4></h4>
-          <p></p>
+    <div class="middle_background">
+      <section class="about">
+        <img
+          src="resources/Блок 2 - О компании/картинка.png"
+          alt="woman holding toy house"
+        />
+        <article class="company">
+          <h2>О КОМПАНИИ</h2>
+          <h3>VITA ESTATE</h3>
+          <p>
+            Динамично развивающееся агентство недвижимости, предлагающее полный
+            спектр услуг на рынке жилой недвижимости, начиная
+            <strong>от продажи Вашей недвижимости</strong> заканчивая
+            <strong>подбором лучшего дома или квартиры</strong> для Вас.
+          </p>
+          <p>
+            Для нас важен
+            <strong>индивидуальный подход к каждому клиенту</strong>, поэтому мы
+            внимательно изучаем Ваши потребности и предлагаем решения, которые
+            наилучшим образом соответствуют вашим ожиданиям.
+          </p>
+          <p>
+            Мы стремимся сделать процесс покупки, продажи или аренды
+            недвижимости максимально <strong>простым и комфортным</strong> для
+            наших клиентов.
+            <strong>Ваша уверенность и спокойствие — наш приоритет</strong>.
+          </p>
+          <p class="signature">
+            <strong>Вита Иванова </strong> | управляющая по сделкам с
+            недвижимостью
+          </p>
+          <div class="company_contact">
+            <span>
+              <img
+                class="watsapp"
+                src="/resources/Блок 2 - О компании/whatsapp.png"
+                alt="watsapp application icon"
+              />+371 200 505 41
+            </span>
+            <span>
+              <img
+                class="telegram"
+                src="/resources/Блок 2 - О компании/telegram.png"
+                alt="telegram application icon"
+              />vitaivi
+            </span>
+          </div>
         </article>
+      </section>
 
-        <article class="analysis">
-          <h4></h4>
-          <p></p>
-        </article>
+      <!-- company services section -->
+      <section class="our_services">
+        <h2>НАШИ УСЛУГИ</h2>
+        <div class="services_container">
+          <article class="services">
+            <div>
+              <img
+                src="/resources/Блок 3 - Наши услуги/консультация.png"
+                alt="human silhouette icon"
+              />
+              <h4>Консультация</h4>
+            </div>
+            <p>
+              Consulting is an opportunity for our customers to obtain complete
+              and unbiased real estate market information, make the right choice
+              and avoid any potential missteps.
+            </p>
+          </article>
 
-        <article class="sale">
-          <h4></h4>
-          <p></p>
-        </article>
+          <article class="services">
+            <div>
+              <img
+                src="/resources/Блок 3 - Наши услуги/анализ.png"
+                alt="notebook with pencil icon"
+              />
+              <h4>Анализ</h4>
+            </div>
+            <p>
+              We study supply and demand to propose optimal solutions. This
+              approach helps our customers make lucrative and balanced
+              decisions.
+            </p>
+          </article>
 
-        <article class="purhcase">
-          <h4></h4>
-          <p></p>
-        </article>
+          <article class="services">
+            <div>
+              <img
+                src="/resources/Блок 3 - Наши услуги/продажа.png"
+                alt="pointing sign icon"
+              />
+              <h4>Продажа</h4>
+            </div>
+            <p>
+              With our assistance, selling property is both fast and profitable.
+              We will have your property sold promptly and for an optimal price.
+            </p>
+          </article>
 
-        <article class="estimate">
-          <h4></h4>
-          <p></p>
-        </article>
+          <article class="services">
+            <div>
+              <img
+                src="/resources/Блок 3 - Наши услуги/покупка.png"
+                alt="house silhouette icon"
+              />
+              <h4>Покупка</h4>
+            </div>
+            <p>
+              Our market knowledge and experience ensure a smooth and safe real
+              estate purchase procedure. Count on us to find the best options
+              tailored to your preferences.
+            </p>
+          </article>
 
-        <article class="maintenance">
-          <h4></h4>
-          <p></p>
-        </article>
-      </div>
-    </section>
+          <article class="services">
+            <div>
+              <img
+                src="/resources/Блок 3 - Наши услуги/оценка.png"
+                alt="notepad with pen icon"
+              />
+              <h4>Оценка</h4>
+            </div>
+            <p>
+              Our professional property assessment considers the property’s
+              condition, location, and market trends, allowing for accurate
+              pricing and well-informed decisions.
+            </p>
+          </article>
 
-    <!-- company properties for sale section -->
-    <section>
-      <h2></h2>
-      <div>
-        <div>
-          <p></p>
+          <article class="services">
+            <div>
+              <img
+                src="/resources/Блок 3 - Наши услуги/сопровождение.png"
+                alt="paper document icon"
+              />
+              <h4>Сопровождение</h4>
+            </div>
+            <p>
+              We provide full transaction support, ensuring legal security and
+              thorough document verification for a successful outcome.
+            </p>
+          </article>
         </div>
+      </section>
 
+      <!-- company properties for sale section -->
+      <section class="properties">
+        <h2>PROPERTIES</h2>
         <div>
-          <p></p>
+          <p>
+            We find the perfect property for you, considering all your
+            preferences
+          </p>
+          <div>
+            <p></p>
+          </div>
+
+          <div>
+            <p></p>
+          </div>
+
+          <div>
+            <p></p>
+          </div>
+
+          <div>
+            <p></p>
+          </div>
+          <p>See all properties</p>
         </div>
+      </section>
 
-        <div>
-          <p></p>
-        </div>
+      <!-- contact form -->
+      <section class="submission">
+        <article>
+          <h3>WANT TO LEARN MORE?</h3>
+          <p>
+            Please leave your contact details, and we’ll contact you soon to
+            answer your questions and provide the best solutions to meet your
+            needs.
+          </p>
+        </article>
 
-        <div>
-          <p></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact form -->
-    <section>
-      <article>
-        <h3></h3>
-      </article>
-
-      <form action="" method="POST">
-        <label></label>
-        <input />
-
-        <label></label>
-        <input />
-
-        <label></label>
-        <input />
-
-        <button>Submit</button>
-
-        <div>
+        <form action="" method="POST">
+          <label>Your name</label>
           <input />
-          <label></label>
+
+          <label>Phone no.</label>
+          <input />
+
+          <label>Email</label>
+          <input />
+
+          <button>Submit an application</button>
+
+          <div>
+            <input />
+            <label
+              >I hereby consent to the processing of my personal data</label
+            >
+          </div>
+        </form>
+      </section>
+
+      <!-- customer review section -->
+      <section class="feedback">
+        <h2>FEEDBACK</h2>
+        <div>
+          <article>
+            <p>Name Suname</p>
+            <p>Feedback text 1</p>
+          </article>
+
+          <article>
+            <p>Name Surname</p>
+            <p>Feedback text 2</p>
+          </article>
+
+          <article>
+            <p>Name Surname</p>
+            <p>Feedback text 2</p>
+          </article>
+
+          <article>
+            <p>Name Surname</p>
+            <p>Feedback text 3</p>
+          </article>
+
+          <article>
+            <p>Name Surname</p>
+            <p>Feedback text 4</p>
+          </article>
+
+          <article>
+            <p>Name Surname</p>
+            <p>Feedback text 5</p>
+          </article>
         </div>
-      </form>
-    </section>
-
-    <!-- customer review section -->
-    <section>
-      <h2></h2>
-      <div>
-        <article>
-          <p></p>
-          <p></p>
-        </article>
-
-        <article>
-          <p></p>
-          <p></p>
-        </article>
-
-        <article>
-          <p></p>
-          <p></p>
-        </article>
-
-        <article>
-          <p></p>
-          <p></p>
-        </article>
-
-        <article>
-          <p></p>
-          <p></p>
-        </article>
-
-        <article>
-          <p></p>
-          <p></p>
-        </article>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer></footer>
