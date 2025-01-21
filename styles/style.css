@@ -232,7 +232,7 @@ span {
     align-items: center;
     width: 1000px;
     height: 400px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
  }
 
  .our_services h2 {
@@ -285,8 +285,143 @@ h4 {
 
 /* properties section styling */
 .properties {
+    width: 900px;
     height: 500px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.properties h2 {
+    margin-bottom: 20px;
+}
+
+.properties_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #39434C;
+    width: 930px;
+    height: 450px;
+}
+
+.properties_container p {
+    margin: 20px;
+    color: #E5E3E3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short_preview {
+    display: flex;
+    justify-content: space-around;
+    width: 850px;
+}
+
+.short_preview img {
+    width: 180px;
+    height: auto;
+}
+
+.short_preview p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: #39434C;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.short_preview > div {
+    width: 180px;
+    height: 280px;
+    background: white;
+}
+
+.all_properties {
+    position: relative;
+    top: 25px;
+    left: 35%;
+}
+
+.property_icons img {
+    width: 15px;
+    height: 15px;
+}
+
+.property_icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 5px 0;
+    height: 30px;
+}
+
+.property_icons p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* submit section styling */
+.submission {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black solid 1px;
+    margin-top: 20px;
+    background-image: url('/resources/Блок\ 5\ -\ Форма\ заявки/the-real-estate-agent.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.submission article {
+    background-color: #39434C;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 50px;
+}
+
+.submission p {
+    font-family: 'Montserrat', sans-serif;
+    color: #E5E3E3;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.submission h3 {
+    width: 290px;
+    color: #E5E3E3;
+    font-family: 'Playfair Display SC';
+    font-weight: 100;
+    font-size: 38px;
+    letter-spacing: -1.5px;
+    margin-bottom: 10px;
+}
+
+.submission p strong {
+    color: #DCC19D;
+    font-weight: 400;
+}
+
+.submission strong {
+    color: #DCC19D;
+    font-weight: 100;
+}
+
+form {
+    background-color: rgb(228, 227, 227);
+    width: 300px;
+
+}
+
+
 
 
