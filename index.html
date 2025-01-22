@@ -397,25 +397,55 @@
           </p>
         </article>
 
-        <form action="" method="POST">
-          <label>Your name</label>
-          <input />
+        <div class="form_container">
+          <form action="" method="POST">
+            <fieldset class="user_info">
+              <!-- <label for="name">Ваше имя</label> -->
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше имя"
+                aria-label="your name"
+                required
+              />
 
-          <label>Phone no.</label>
-          <input />
+              <!-- <label>Номер телефона</label> -->
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Номер телефона"
+                aria-label="your phone number"
+                required
+              />
 
-          <label>Email</label>
-          <input />
+              <!-- <label>Электронная почта</label> -->
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Электронная почта"
+                aria-label="your email"
+                required
+              />
+            </fieldset>
 
-          <button>Submit an application</button>
+            <button type="submit">Отправить заявку</button>
 
-          <div>
-            <input />
-            <label
-              >I hereby consent to the processing of my personal data</label
-            >
-          </div>
-        </form>
+            <div class="consent">
+              <!-- <label> -->
+              <input
+                type="checkbox"
+                name="consent"
+                aria-label="consent to processing personal data"
+                required
+              />
+              Я соглашаюсь на обработку персональных данных
+              <!-- </label> -->
+            </div>
+          </form>
+        </div>
       </section>
 
       <!-- customer review section -->

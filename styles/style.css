@@ -369,7 +369,6 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: black solid 1px;
     margin-top: 20px;
     background-image: url('/resources/Блок\ 5\ -\ Форма\ заявки/the-real-estate-agent.jpg');
     background-size: cover;
@@ -416,11 +415,87 @@ h4 {
     font-weight: 100;
 }
 
+/* form styling */
 form {
-    background-color: rgb(228, 227, 227);
-    width: 300px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+.user_info {
+    height: 150px;
+    border-radius: 10px;
+    background-color: #E5E3E3;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #39434C;
+    outline: none;
+    padding: 10px 0;
+    background-color: #E5E3E3;
+    width: 290px;
+}
+
+input:focus {
+    border-bottom: 2px solid black;
+}
+
+input::placeholder {
+    color: #39434C;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+form>button {
+    margin: 10px 0 20px;
+    width: 350px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.consent>input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.consent {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    display: flex;
+}
+
+/* .consent input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid black;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+} */
 
 
 
