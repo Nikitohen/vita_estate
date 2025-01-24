@@ -54,8 +54,8 @@ a {
 select {
     height: 30px;
     width: 50px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 6px;
+    padding-right: 15px;
     margin-top: 40px;
     margin-right: 50px;
     border: white solid 1px;
@@ -69,6 +69,7 @@ select {
     background: url('/resources/Блок\ 1\ -\ Главная/галочка для выбора языка.png') no-repeat right center;
     background-size: 8px;
     background-color: rgba(0, 0, 0, 0.0);
+    background-position: 85% center;
 
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -133,10 +134,14 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: white;
+}
+
 .middle_background {
     background: 
         url('/resources/Обложка\ всего\ сайта/Обложка_снежинки.png'),
-        linear-gradient(to bottom, rgb(73, 85, 97), rgb(215, 217, 220));
+        linear-gradient(to bottom, rgb(73, 85, 97), rgb(224, 226, 228));
     background-size: cover, contain;
     background-repeat: no-repeat, no-repeat;
     display: flex;
@@ -155,13 +160,18 @@ button {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    overflow: scroll;
+    padding-left: 10px;
 }
 
-.about img {
-    height: 600px;
-    width: auto;
+.about>div {
+    display: flex;
     padding-right: 50px;
     margin-top: 12px;
+}
+
+.about div>img {
+    height: 500px;
 }
 
 .company h2,
@@ -182,8 +192,7 @@ h2 {
     margin-top: 20px;
 }
 
-.company p,
-span {
+.company p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -212,6 +221,18 @@ span {
     margin-right: 10px;
 }
 
+.watsapp:hover,
+.telegram:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.watsapp a > img,
+.telegram a > img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .company_contact {
     display: flex;
     align-items: center;
@@ -219,10 +240,19 @@ span {
     width: 280px;
 }
 
-span {
+.watsapp a,
+.telegram a {
     display: flex;
     align-items: center;
     color: rgb(220, 193, 157);
+}
+
+.watsapp,
+.telegram {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 /* our services section styling */
@@ -362,6 +392,11 @@ h4 {
     margin-right: 5px;
 }
 
+.property_icons span {
+    display: flex;
+    align-items: center;
+}
+
 /* submit section styling */
 .submission {
     height: 500px;
@@ -453,10 +488,6 @@ input {
     width: 290px;
 }
 
-input:focus {
-    border-bottom: 2px solid black;
-}
-
 input::placeholder {
     color: #39434C;
     font-family: 'Montserrat',sans-serif;
@@ -473,6 +504,10 @@ form>button {
     font-weight: 300;
 }
 
+form>button:hover {
+    background-color: white;
+}
+
 .consent>input {
     width: auto;
     margin-right: 10px;
@@ -484,19 +519,99 @@ form>button {
     display: flex;
 }
 
-/* .consent input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 1px solid black;
-    width: 14px;
-    height: 14px;
-    border-radius: 3px;
-    padding: 0;
-    background: none;
-    cursor: pointer;
-} */
+/* feedback section styling */
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
 
+.feedback h2 {
+    margin: 40px 0 20px;
+    color: #39434C;
+}
 
+.feedback>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    border-radius: 30px;
+    background-color: rgb(195, 199, 206);
+    gap: 20px 60px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
 
+.feedback p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: #39434C;
+}
 
+.feedback img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.feedback article>div {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.feedback article {
+    width: 280px;
+}
+
+.feedback article div > p:first-of-type {
+    font-weight: 600;
+}
+
+/* footer styling */
+footer {
+    background-color: #39434C;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 30px 20px;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: #E5E3E3;
+    font-weight: 200;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+}
+
+.footer_logo {
+    width: 148px;
+    height: auto;
+    margin: 10px 0 15px;
+}
+
+.phone,
+.email {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.right > p {
+    margin-top: 50px; 
+}
