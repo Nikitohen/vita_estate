@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+
 body {
     width: 100vw;
     background-image: url('/resources/Обложка\ всего\ сайта/Обложка фон.png');
@@ -151,7 +156,7 @@ button:hover {
 
 /* about company section styling */
 .about {
-    height: 700px;
+    height: 620px;
     display: flex;
     margin: 90px 120px 0;
 }
@@ -351,6 +356,13 @@ h4 {
 .short_preview img {
     width: 180px;
     height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.short_preview img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .short_preview p {
@@ -371,7 +383,12 @@ h4 {
 .all_properties {
     position: relative;
     top: 25px;
-    left: 35%;
+    left: 34%;
+    margin-top: 20px;
+}
+
+.all_properties:hover {
+    color: #DCC19D;
 }
 
 .property_icons img {
@@ -615,3 +632,66 @@ footer p {
 .right > p {
     margin-top: 50px; 
 }
+
+/* properties html page styling */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.filter_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: red solid 1px;
+    width: 1000px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.gallery {
+    margin-top: 30px;
+    width: 850px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 20px;
+
+}
+
+.gallery_heading {
+    font-family: 'Playfair Display SC';
+    font-weight: 100;
+    font-size: 38px;
+    color: #DCC19D;
+    margin-bottom: 50px;
+    line-height: 150%;
+}
+
+.gallery article {
+    background-color: rgb(249, 238, 223);
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: black solid 1px;
+    font-family:'Montserrat', sans-serif;
+    color: #39434C;
+    height: 50px;
+}
+
+.filter select {
+    border: #DCC19D solid 1px;
+}
+
+.bin img {
+    width: 17px;
+    height: 20px;
+}
+
+
+
+

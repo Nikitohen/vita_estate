@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Vita Estate Main Page</title>
   </head>
   <body>
     <!-- header section -->
@@ -23,7 +23,7 @@
           />
         </a>
         <!-- navigation -->
-        <nav class="navigation">
+        <nav class="navigation" id="home">
           <ul class="nav_options">
             <li><a href="#home">Главная</a></li>
             <li><a href="#about">О нас</a></li>
@@ -53,7 +53,7 @@
     </section>
 
     <!-- company description section -->
-    <div class="middle_background">
+    <div class="middle_background" id="about">
       <section class="about">
         <div>
           <img
@@ -108,7 +108,7 @@
       </section>
 
       <!-- company services section -->
-      <section class="our_services">
+      <section class="our_services" id="services">
         <h2>НАШИ УСЛУГИ</h2>
         <div class="services_container">
           <article class="services">
@@ -202,7 +202,7 @@
       </section>
 
       <!-- company properties for sale section -->
-      <section class="properties">
+      <section class="properties" id="properties">
         <h2>PROPERTIES</h2>
         <div class="properties_container">
           <p>
@@ -211,10 +211,58 @@
           </p>
           <div class="short_preview">
             <div>
-              <img
+              <a href="">
+                <img
                 src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
                 alt="apartment inside view"
               />
+              </a>
+              <p>
+                Адрес, район<br />
+                Цена €
+              </p>
+              <div class="property_icons">
+                <span>
+                  <p>3</p>
+                  <img
+                    src="/resources/Блок 4 - Объекты/дверь.png"
+                    alt="door icon"
+                  />
+                </span>
+
+                <span>
+                  <p>2</p>
+                  <img
+                    src="/resources/Блок 4 - Объекты/санузел.png"
+                    alt="wc icon"
+                  />
+                </span>
+
+                <span>
+                  <p>4/9</p>
+                  <img
+                    src="/resources/Блок 4 - Объекты/этаж.png"
+                    alt="ladder icon"
+                  />
+                </span>
+
+                <span>
+                  <p>80</p>
+                  <img
+                    src="/resources/Блок 4 - Объекты/площадь.png"
+                    alt="area icon"
+                  />
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <a href="">
+                <img
+                src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+                alt="apartment inside view"
+              />
+              </a>
               <p>
                 Адрес, район<br />
                 Цена €
@@ -255,10 +303,12 @@
             </div>
 
             <div>
-              <img
+              <a href="">
+                <img
                 src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
                 alt="apartment inside view"
               />
+              </a>
               <p>
                 Адрес, район<br />
                 Цена €
@@ -299,54 +349,12 @@
             </div>
 
             <div>
-              <img
+              <a href="">
+                <img
                 src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
                 alt="apartment inside view"
               />
-              <p>
-                Адрес, район<br />
-                Цена €
-              </p>
-              <div class="property_icons">
-                <span>
-                  <p>3</p>
-                  <img
-                    src="/resources/Блок 4 - Объекты/дверь.png"
-                    alt="door icon"
-                  />
-                </span>
-
-                <span>
-                  <p>2</p>
-                  <img
-                    src="/resources/Блок 4 - Объекты/санузел.png"
-                    alt="toilet icon"
-                  />
-                </span>
-
-                <span>
-                  <p>4/9</p>
-                  <img
-                    src="/resources/Блок 4 - Объекты/этаж.png"
-                    alt="ladder icon"
-                  />
-                </span>
-
-                <span>
-                  <p>80</p>
-                  <img
-                    src="/resources/Блок 4 - Объекты/площадь.png"
-                    alt="area icon"
-                  />
-                </span>
-              </div>
-            </div>
-
-            <div>
-              <img
-                src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
-                alt="apartment inside view"
-              />
+              </a>
               <p>
                 Адрес, район<br />
                 Цена €
@@ -386,7 +394,7 @@
               </div>
             </div>
           </div>
-          <a href="" class="all_properties">Смотреть все объекты</a>
+          <a href="/properties.html" class="all_properties">Смотреть все объекты</a>
         </div>
       </section>
 
@@ -404,7 +412,7 @@
         <div class="form_container">
           <form action="" method="POST">
             <fieldset class="user_info">
-              <!-- <label for="name">Ваше имя</label> -->
+              
               <input
                 type="text"
                 id="name"
@@ -414,7 +422,7 @@
                 required
               />
 
-              <!-- <label>Номер телефона</label> -->
+              
               <input
                 type="tel"
                 id="phone"
@@ -424,7 +432,7 @@
                 required
               />
 
-              <!-- <label>Электронная почта</label> -->
+              
               <input
                 type="email"
                 id="email"
@@ -438,7 +446,7 @@
             <button type="submit">Отправить заявку</button>
 
             <div class="consent">
-              <!-- <label> -->
+              
               <input
                 type="checkbox"
                 name="consent"
@@ -446,14 +454,14 @@
                 required
               />
               Я соглашаюсь на обработку персональных данных
-              <!-- </label> -->
+              
             </div>
           </form>
         </div>
       </section>
 
       <!-- customer review section -->
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <h2>FEEDBACK</h2>
         <div>
           <article>
@@ -550,7 +558,7 @@
     </div>
 
     <!-- footer -->
-    <footer>
+    <footer id="contact">
       <div class="left">
         <a href="index.html">
           <img
@@ -559,9 +567,9 @@
             alt="Company logo"
           />
         </a>
-        <p class="phone">+371 297 88 296</p>
+        <p class="phone">+371 371 371 11</p>
         <p class="email">
-          <a href="mailto:info@vitaestate.lv">info@vitaestate.lv</a>
+          <a href="mailto:info@vitaestate.lv">info@info.lv</a>
         </p>
         <p>Свяжитесь с нами любым для Вас удобным способом</p>
       </div>

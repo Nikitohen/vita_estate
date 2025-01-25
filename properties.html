@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vita Estate Properties</title>
+  </head>
+  <body class="property_page">
+    <main>
+      <section class="filter_section">
+        <h1 class="gallery_heading">ОБЪЕКТЫ</h1>
+        <fieldset class="filter">
+
+          <!-- <label for="type">Тип</label> -->
+          <select id="type_category" name="type" placeholder="Тип " aria-label="type">
+            <option value="">Все</option>
+            <option value="Квартира">Квартира</option>
+            <option value="Дом">Дом</option>
+            <option value="Земля">Земля</option>
+          </select>
+
+          <!-- <label for="region">Район:</label> -->
+          <select id="region" name="region" placeholder="Район: " aria-label="region">
+            <option value="">Все</option>
+            <option value="Центр">Центр</option>
+            <option value="Агенскалнс">Агенскалнс</option>
+            <option value="Аплокциемс">Аплокциемс</option>
+            <option value="Берги">Берги</option>
+            <option value="Биекенсала">Биекенсала</option>
+            <option value="Биерини">Биерини</option>
+            <option value="Болдерая">Болдерая</option>
+            <option value="Брекши">Брекши</option>
+            <option value="Вецаки">Вецаки</option>
+            <option value="Вецдаугава">Вецдаугава</option>
+            <option value="Вецмилгравис">Вецмилгравис</option>
+            <option value="Вецрига">Вецрига</option>
+            <option value="Волери">Волери</option>
+            <option value="Гризинькалнс">Гризинькалнс</option>
+            <option value="Дарзини">Дарзини</option>
+            <option value="Дарзциемс">Дарзциемс</option>
+            <option value="Даугавгрива">Даугавгрива</option>
+            <option value="Дзегужкалнс">Дзегужкалнс</option>
+            <option value="Дрейлини">Дрейлини</option>
+            <option value="Закюсала">Закюсала</option>
+            <option value="Засулаукс">Засулаукс</option>
+            <option value="Зиепниекалнс">Зиепниекалнс</option>
+            <option value="Золитуде">Золитуде</option>
+            <option value="Ильгюциемс">Ильгюциемс</option>
+            <option value="Иманта">Иманта</option>
+            <option value="Катлакалнс">Катлакалнс</option>
+            <option value="Кенгарагс">Кенгарагс</option>
+            <option value="Кипсала">Кипсала</option>
+            <option value="Кливерсала">Кливерсала</option>
+            <option value="Кундзиньсала">Кундзиньсала</option>
+            <option value="Луцавсала">Луцавсала</option>
+            <option value="Мангали">Мангали</option>
+            <option value="Мангальсала">Мангальсала</option>
+            <option value="Межапарк">Межапарк</option>
+            <option value="Межциемс">Межциемс</option>
+            <option value="Плявниеки">Плявниеки</option>
+            <option value="Пурвциемс">Пурвциемс</option>
+            <option value="р-н ул. Краста">р-н ул. Краста</option>
+            <option value="р-н ул. Латгалес">р-н ул. Латгалес</option>
+            <option value="Румбула">Румбула</option>
+            <option value="Саркандаугава">Саркандаугава</option>
+            <option value="Тейка">Тейка</option>
+            <option value="Торнякалнс">Торнякалнс</option>
+            <option value="Трисциемс">Трисциемс</option>
+            <option value="Чиекуркалнс">Чиекуркалнс</option>
+            <option value="Шампетерис-Плескодале">Шампетерис-Плескодале</option>
+            <option value="Шкиротава">Шкиротава</option>
+            <option value="Югла">Югла</option>
+            <option value="Яняварти">Яняварти</option>
+            <option value="Яунмилгравис">Яунмилгравис</option>
+            <option value="Яунциемс">Яунциемс</option>
+            <option value="VEF">VEF</option>
+            <option value="Другой">Другой</option>
+          </select>
+
+          <!-- <label for="housing_series">Серия</label> -->
+          <select id="housing_series" name="series" placeholder="Серия" aria-label="housing series">
+            <option value="103">103</option>
+            <option value="104">104</option>
+            <option value="119">119</option>
+            <option value="467">467</option>
+            <option value="602">602</option>
+            <option value="Дов. дом">Дов. дом</option>
+            <option value="Лит. пр.">Лит. пр.</option>
+            <option value="М. сем.">М. сем.</option>
+            <option value="Рекон.">Рекон.</option>
+            <option value="Спец. пр.">Спец. пр.</option>
+            <option value="Сталинка">Сталинка</option>
+            <option value="Хрущ.">Хрущ.</option>
+            <option value="Ч. дом">Ч. дом</option>
+            <option value="Чеш. пр.">Чеш. пр.</option>
+            <option value="Нов.">Нов.</option>
+          </select>
+
+          <!-- <label for="filter_area">Площадь: </label> -->
+          <input type="number" id="filter_area" name="area" min="1" max="99999999" placeholder="Площадь: " aria-label="area">
+
+          <!-- <label for="level">Этаж</label> -->
+          <input type="number" id="level" name="level" placeholder="Этаж " aria-label="level">
+
+          <label for="housing_type">Тип дома</label>
+          <select id="housing_type" name="housing type">
+            <option value="Кирпичный">Кирпичный</option>
+            <option value="Панельный">Панельный</option>
+            <option value="Газоблок">Газоблок</option>
+            <option value="Деревянный">Деревянный</option>
+            <option value="Модульный">Модульный</option>
+            <option value="Контейнер">Контейнер</option>
+            <option value="Другое">Другое</option>
+          </select>
+
+          <label for="filter_price">Цена: </label>
+          <input type="number" id="filter_price" name="price" min="1" max="99999999">
+
+          <button class="bin" type="reset" aria-label="reset filter">
+            <img src="/resources/Окно объекты/мусорник.png" alt="reset filter">
+          </button>
+        </fieldset>
+      </section>
+
+      <section class="short_preview gallery">
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              src="/resources/Блок 4 - Объекты/dizain-kvartir-4.webp"
+              alt="apartment inside view"
+            />
+          </a>
+          <p>
+            Адрес, район<br />
+            Цена €
+          </p>
+          <div class="property_icons">
+            <span>
+              <p>3</p>
+              <img
+                src="/resources/Блок 4 - Объекты/дверь.png"
+                alt="door icon"
+              />
+            </span>
+
+            <span>
+              <p>2</p>
+              <img
+                src="/resources/Блок 4 - Объекты/санузел.png"
+                alt="wc icon"
+              />
+            </span>
+
+            <span>
+              <p>4/9</p>
+              <img
+                src="/resources/Блок 4 - Объекты/этаж.png"
+                alt="ladder icon"
+              />
+            </span>
+
+            <span>
+              <p>80</p>
+              <img
+                src="/resources/Блок 4 - Объекты/площадь.png"
+                alt="area icon"
+              />
+            </span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
