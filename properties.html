@@ -17,16 +17,17 @@
         <fieldset class="filter">
 
           <!-- <label for="type">Тип</label> -->
-          <select id="type_category" name="type" placeholder="Тип " aria-label="type">
-            <option value="">Все</option>
+          <select class="filter_type" id="type_category" name="type" placeholder="Тип" aria-label="type">
+            <option value="" disabled selected>Тип</option>
             <option value="Квартира">Квартира</option>
             <option value="Дом">Дом</option>
             <option value="Земля">Земля</option>
+            <option value="Все">Все</option>
           </select>
 
           <!-- <label for="region">Район:</label> -->
-          <select id="region" name="region" placeholder="Район: " aria-label="region">
-            <option value="">Все</option>
+          <select class="filter_region" id="region" name="region" placeholder="Район: " aria-label="region">
+            <option value="" disabled selected>Район</option>
             <option value="Центр">Центр</option>
             <option value="Агенскалнс">Агенскалнс</option>
             <option value="Аплокциемс">Аплокциемс</option>
@@ -80,10 +81,12 @@
             <option value="Яунциемс">Яунциемс</option>
             <option value="VEF">VEF</option>
             <option value="Другой">Другой</option>
+            <option value="Все">Все</option>
           </select>
 
           <!-- <label for="housing_series">Серия</label> -->
-          <select id="housing_series" name="series" placeholder="Серия" aria-label="housing series">
+          <select class="filter_series" id="housing_series" name="series" placeholder="Серия" aria-label="housing series">
+            <option value="" disabled selected>Серия</option>
             <option value="103">103</option>
             <option value="104">104</option>
             <option value="119">119</option>
@@ -99,16 +102,18 @@
             <option value="Ч. дом">Ч. дом</option>
             <option value="Чеш. пр.">Чеш. пр.</option>
             <option value="Нов.">Нов.</option>
+            <option value="Все">Все</option>
           </select>
 
           <!-- <label for="filter_area">Площадь: </label> -->
-          <input type="number" id="filter_area" name="area" min="1" max="99999999" placeholder="Площадь: " aria-label="area">
+          <input class="filter_area" type="number" id="filter_area" name="area" min="1" max="99999999" placeholder="Площадь" aria-label="area">
 
           <!-- <label for="level">Этаж</label> -->
-          <input type="number" id="level" name="level" placeholder="Этаж " aria-label="level">
+          <input class="filter_level" type="number" id="level" name="level" placeholder="Этаж" aria-label="level">
 
-          <label for="housing_type">Тип дома</label>
-          <select id="housing_type" name="housing type">
+          <!-- <label for="housing_type">Тип дома</label> -->
+          <select class="filter_housing_type" id="housing_type" name="housing type" placeholder="Тип дома" aria-label="housing type">
+            <option value="" disabled selected>Тип дома</option>
             <option value="Кирпичный">Кирпичный</option>
             <option value="Панельный">Панельный</option>
             <option value="Газоблок">Газоблок</option>
@@ -116,10 +121,11 @@
             <option value="Модульный">Модульный</option>
             <option value="Контейнер">Контейнер</option>
             <option value="Другое">Другое</option>
+            <option value="Все">Все</option>
           </select>
 
-          <label for="filter_price">Цена: </label>
-          <input type="number" id="filter_price" name="price" min="1" max="99999999">
+          <!-- <label for="filter_price">Цена: </label> -->
+          <input class="filter_price" type="number" id="filter_price" name="price" min="1" max="99999999" placeholder="Цена" aria-label="price">
 
           <button class="bin" type="reset" aria-label="reset filter">
             <img src="/resources/Окно объекты/мусорник.png" alt="reset filter">
