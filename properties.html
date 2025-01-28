@@ -13,20 +13,43 @@
   <body class="property_page">
     <main>
       <section class="filter_section">
-        <h1 class="gallery_heading">ОБЪЕКТЫ</h1>
+        <div>
+            <h1 class="gallery_heading">ОБЪЕКТЫ</h1>
+            <nav class="properties_navigation">
+                <ul class="nav_options">
+                  <li><a href="index.html#home">Главная</a></li>
+                  <li><a href="index.html#about">О нас</a></li>
+                  <li><a href="index.html#services">Услуги</a></li>
+                  <li><a href="index.html#feedback">Отзывы</a></li>
+                  <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+              </nav>
+        </div>
         <fieldset class="filter">
-
           <!-- <label for="type">Тип</label> -->
-          <select class="filter_type" id="type_category" name="type" placeholder="Тип" aria-label="type">
+          <select
+            class="filter_type"
+            id="type_category"
+            name="type"
+            placeholder="Тип"
+            aria-label="type"
+          >
             <option value="" disabled selected>Тип</option>
-            <option value="Квартира">Квартира</option>
-            <option value="Дом">Дом</option>
-            <option value="Земля">Земля</option>
+            <option value="Серийные пр.">Серийные пр.</option>
+            <option value="Новые пр.">Новые пр.</option>
+            <option value="Дома">Дома</option>
+            <option value="Участки">Участки</option>
             <option value="Все">Все</option>
           </select>
 
           <!-- <label for="region">Район:</label> -->
-          <select class="filter_region" id="region" name="region" placeholder="Район: " aria-label="region">
+          <select
+            class="filter_region"
+            id="region"
+            name="region"
+            placeholder="Район: "
+            aria-label="region"
+          >
             <option value="" disabled selected>Район</option>
             <option value="Центр">Центр</option>
             <option value="Агенскалнс">Агенскалнс</option>
@@ -85,7 +108,13 @@
           </select>
 
           <!-- <label for="housing_series">Серия</label> -->
-          <select class="filter_series" id="housing_series" name="series" placeholder="Серия" aria-label="housing series">
+          <select
+            class="filter_series"
+            id="housing_series"
+            name="series"
+            placeholder="Серия"
+            aria-label="housing series"
+          >
             <option value="" disabled selected>Серия</option>
             <option value="103">103</option>
             <option value="104">104</option>
@@ -106,13 +135,35 @@
           </select>
 
           <!-- <label for="filter_area">Площадь: </label> -->
-          <input class="filter_area" type="number" id="filter_area" name="area" min="1" max="99999999" placeholder="Площадь" aria-label="area">
+          <input
+            class="filter_area"
+            type="number"
+            id="filter_area"
+            name="area"
+            min="1"
+            max="99999999"
+            placeholder="Площадь"
+            aria-label="area"
+          />
 
           <!-- <label for="level">Этаж</label> -->
-          <input class="filter_level" type="number" id="level" name="level" placeholder="Этаж" aria-label="level">
+          <input
+            class="filter_level"
+            type="number"
+            id="level"
+            name="level"
+            placeholder="Этаж"
+            aria-label="level"
+          />
 
           <!-- <label for="housing_type">Тип дома</label> -->
-          <select class="filter_housing_type" id="housing_type" name="housing type" placeholder="Тип дома" aria-label="housing type">
+          <select
+            class="filter_housing_type"
+            id="housing_type"
+            name="housing type"
+            placeholder="Тип дома"
+            aria-label="housing type"
+          >
             <option value="" disabled selected>Тип дома</option>
             <option value="Кирпичный">Кирпичный</option>
             <option value="Панельный">Панельный</option>
@@ -125,10 +176,22 @@
           </select>
 
           <!-- <label for="filter_price">Цена: </label> -->
-          <input class="filter_price" type="number" id="filter_price" name="price" min="1" max="99999999" placeholder="Цена" aria-label="price">
+          <input
+            class="filter_price"
+            type="number"
+            id="filter_price"
+            name="price"
+            min="1"
+            max="99999999"
+            placeholder="Цена"
+            aria-label="price"
+          />
 
           <button class="bin" type="reset" aria-label="reset filter">
-            <img src="/resources/Окно объекты/мусорник.png" alt="reset filter">
+            <img
+              src="/resources/Окно объекты/мусорник.png"
+              alt="reset filter"
+            />
           </button>
         </fieldset>
       </section>

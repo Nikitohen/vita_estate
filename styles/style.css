@@ -666,18 +666,37 @@ main {
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    /* height: 150px; */
+    height: 150px;
     margin-top: 30px;
 }
 
+.filter_section > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 930px;
+}
+
+.properties_navigation {
+    margin-bottom: 45px;
+}
+
+.properties_navigation .nav_options {
+    width: 400px;
+}
+
+.properties_navigation a {
+    color: #39434C;
+    text-shadow: none;
+    font-weight: 300;
+}
+
 .gallery {
-    margin-top: 40px;
     width: 950px;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 30px 50px;
-    /* padding: 0 20px; */
 }
 
 .gallery_heading {
@@ -685,7 +704,7 @@ main {
     font-weight: 100;
     font-size: 38px;
     color: #DCC19D;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     line-height: 150%;
 }
 
@@ -711,14 +730,14 @@ main {
     -moz-appearance: none;
     padding-left: 5px;
     cursor: pointer;
-    background: url('/resources/Окно\ объекты/галочка для выбора фильтра.png');
+    background: url('/resources/Окно\ объекты/галочка для выбора фильтра.png') no-repeat right 6px center;
     background-size: 10px;
-    background-repeat: no-repeat;
-    background-position: 95% center;
     font-family: 'Montserrat',sans-serif;
     color: #39434C;
     height: 30px;
     font-weight: 300;
+    padding-right: 20px;
+    
 }
 
 .bin img {
