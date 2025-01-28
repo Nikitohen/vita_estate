@@ -1,0 +1,390 @@
+/* ================================
+   PROPERTIES.HTML PAGE STYLING
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.filter_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.filter_section > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 930px;
+}
+
+.properties_navigation {
+    margin-bottom: 45px;
+}
+
+.properties_navigation .nav_options {
+    width: 400px;
+}
+
+.nav_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+}
+
+.nav_options li {
+    list-style-type: none;
+    text-shadow: 1px 1px 1px rgb(119, 119, 119);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.properties_navigation a {
+    color: #39434C;
+    text-shadow: none;
+    font-weight: 300;
+}
+
+.short_preview {
+    display: flex;
+    justify-content: space-around;
+    width: 850px;
+}
+
+.short_preview img {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.short_preview img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.short_preview p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: #39434C;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.short_preview > div {
+    width: 180px;
+    height: 280px;
+    background: white;
+}
+
+.property_icons img {
+    width: 15px;
+    height: 15px;
+}
+
+.property_icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 5px 0;
+    height: 30px;
+}
+
+.property_icons p {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.property_icons span {
+    display: flex;
+    align-items: center;
+}
+
+.gallery {
+    width: 950px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px 50px;
+}
+
+.gallery_heading {
+    font-family: 'Playfair Display SC';
+    font-weight: 100;
+    font-size: 38px;
+    color: #DCC19D;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+.gallery article {
+    background-color: rgb(249, 238, 223);
+}
+
+/* Filter field styling */
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: 930px;
+}
+
+.filter select,
+.filter input {
+    box-sizing: border-box;
+    border: #DCC19D solid 1px;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 5px;
+    cursor: pointer;
+    background: url('/resources/Окно\ объекты/галочка для выбора фильтра.png') no-repeat right 6px center;
+    background-size: 10px;
+    font-family: 'Montserrat',sans-serif;
+    color: #39434C;
+    height: 30px;
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.bin img {
+    width: 17px;
+    height: 20px;
+}
+
+.bin {
+    box-sizing: border-box;
+    border: #DCC19D solid 1px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.filter_region {
+    width: 200px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.filter_type,
+.filter_series {
+    width: 100px;
+}
+
+.filter_housing_type {
+    width: 120px;
+}
+
+.filter_area,
+.filter_level,
+.filter_price {
+    all: unset;
+    width: 100px;
+    padding: 0 5px 1px;
+}
+
+.filter_area::placeholder,
+.filter_level::placeholder,
+.filter_price::placeholder {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+/* ================================
+   SINGLE_PROPERTY.HTML PAGE STYLING
+   ================================ */
+
+.navigation {
+    margin: 41px 0 30px;
+    position: relative;
+    left: 214px;
+}
+
+.navigation > .nav_options {
+    width: 500px;
+}
+
+.main_photo {
+    display: flex;
+    width: 94%;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_photo img {
+    width: 500px;
+    height: auto;
+}
+
+.description {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #39434C;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.description > p {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+.apartment_specs {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.apartment_specs span {
+    height: 50px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.apartment_specs p {
+    margin-left: 7px;
+}
+
+.apartment_specs img {
+    width: 30px;
+    height: 30px;
+}
+
+.all_photo {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 20px;
+}
+
+.all_photo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.all_photo img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.property_description {
+    font-family: 'Montserrat', sans-serif;
+    color: #39434C;
+}
+
+.property_description p {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.property_location {
+    margin: 20px 0 30px;
+}
+
+/* ================================
+   FOOTER SECTION STYLING
+   ================================ */
+footer {
+    background-color: #39434C;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 30px 20px;
+    width: 100vw;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: #E5E3E3;
+    font-weight: 200;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.footer_logo {
+    width: 148px;
+    height: auto;
+    margin: 10px 0 15px;
+}
+
+.phone,
+.email {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.right > p {
+    margin-top: 50px; 
+}
