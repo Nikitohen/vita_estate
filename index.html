@@ -13,7 +13,7 @@
   <body>
     <!-- header section -->
     <section class="header_section">
-      <header>
+      <header class="header">
         <!-- logo -->
         <a href="index.html">
           <img
@@ -23,8 +23,8 @@
           />
         </a>
         <!-- navigation -->
-        <nav class="navigation" id="home">
-          <ul class="nav_options">
+        <nav class="navigation menu" id="home">
+          <ul class="nav_options text-style">
             <li class="hide_on_mobile"><a href="#home">Главная</a></li>
             <li class="hide_on_mobile"><a href="#about">О нас</a></li>
             <li><a href="#services">Услуги</a></li>
@@ -34,7 +34,7 @@
           </ul>
         </nav>
 
-        <select class="language_choice">
+        <select class="language_choice text-style">
           <option value="en">EN</option>
           <option valaue="lv">LV</option>
           <option value="ru">RU</option>
@@ -48,7 +48,7 @@
           Помогаем в <strong>кратчайшие сроки</strong> продать и подобрать<br />
           <strong>любой объект</strong> жилой недвижимости.
         </p>
-        <a href="#submission"><button class="main_button">Отправить заявку</button></a>
+        <a href="#submission"><button class="main_button text-style">Отправить заявку</button></a>
       </div>
     </section>
 
@@ -87,7 +87,7 @@
             недвижимостью
           </p>
           <div class="company_contact">
-            <span class="watsapp">
+            <span class="watsapp text-style">
               <a href="https://t.me/yourusername" target="_blank">
                 <img
                 src="/resources/Блок 2 - О компании/whatsapp.png"
@@ -95,7 +95,7 @@
               />+371 371 371 11
               </a>
             </span>
-            <span class="telegram">
+            <span class="telegram text-style">
               <a href="https://wa.me/yourphonenumber" target="_blank">
                 <img
                 src="/resources/Блок 2 - О компании/telegram.png"
@@ -394,7 +394,7 @@
               </div>
             </div>
           </div>
-          <a href="/properties.html" class="all_properties">Смотреть все объекты</a>
+          <a href="/properties.html" class="all_properties text-style">Смотреть все объекты</a>
         </div>
       </section>
 
@@ -410,7 +410,7 @@
         </article>
 
         <div class="form_container">
-          <form action="" method="POST">
+          <form action="" method="POST" id="submit_form">
             <fieldset class="user_info">
               
               <input
@@ -421,7 +421,7 @@
                 aria-label="your name"
                 required
               />
-
+              <p class="error_message"></p>
               
               <input
                 type="tel"
@@ -429,9 +429,10 @@
                 name="phone"
                 placeholder="Номер телефона"
                 aria-label="your phone number"
+                pattern="[0-9]{8}"
                 required
               />
-
+              <p class="error_message"></p>
               
               <input
                 type="email"
@@ -441,9 +442,11 @@
                 aria-label="your email"
                 required
               />
+              <p class="error_message"></p>
+
             </fieldset>
 
-            <button type="submit" class="contact_button">Отправить заявку</button>
+            <button type="submit" class="contact_button text-style">Отправить заявку</button>
 
             <div class="consent">
               
