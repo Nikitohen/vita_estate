@@ -19,7 +19,7 @@ body {
 .header_section {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(74, 85, 98, 22%), rgba(255, 255, 255, 0)),url("/resources/Block 1 - Main/main-section-background.jpg");
+    background-image: linear-gradient(rgba(74, 85, 98, 22%), rgba(255, 255, 255, 0)),url("resources/Block 1 - Main/main-section-background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
