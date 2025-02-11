@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: url('/resources/Backgoround/background.png');
+    background-image: url('../resources/Backgoround/background.png');
 }
 
 /* ================================
@@ -78,7 +78,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    background: url('resources/Block 1 - Main/language-choice.png') no-repeat right center;
+    background: url('../resources/Block 1 - Main/language-choice.png') no-repeat right center;
     background-size: 8px;
     background-color: rgba(0, 0, 0, 0.0);
     background-position: 85% center;
@@ -159,7 +159,7 @@ h2 {
 
 .middle_background {
     background: 
-        url('resources/Backgoround/flakes.png'),
+        url('../resources/Backgoround/flakes.png'),
         linear-gradient(to bottom, rgb(73, 85, 97), rgb(224, 226, 228));
     background-size: cover, contain;
     background-repeat: no-repeat, no-repeat;
